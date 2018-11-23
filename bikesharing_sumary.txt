@@ -1,0 +1,9 @@
+BIKE SHARING SUMMARY
+1. sono stati importati e la variabile date è stata separata creando le variabili year, month, wday, hour.
+2. è stato esplorato il dataset. Alcune variabili Hour e Temp sono state discretizzate attraverso un albero di regressione usando come risposta prima casual e poi registered. Sono state create le nuove variabili senza eliminare le originali.
+3. è stata creata una nuova variabile day_part sempre con un albero di regressione (rpart) andando ad usare come variabile risposta prima casual e poi registered e come variabili esplicative hour e wday.
+4. Sono stati rimpiazzati attraverso un lm i valori di windspeed che assumevano il valore 0.
+5. Sono state trasformate in log1p() le variabili risposta casual e registered.
+6. Sono stati allenati 4 modelli: 2 usando come risposta casual, 2 usando come risposta registered. I modelli usati sono una random forest e una svm.
+7. I risultati delle previsioni sono stati combinati( rispettivamente per casual e registered) dando peso 0.65 al mdoello svm e 0.35 alla random forest.
+8. Si sono elevati ad esponenziale -1: expm1() i due risultati e si sono sommati per ottenere la previsione di count.
