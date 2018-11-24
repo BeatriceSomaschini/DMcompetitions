@@ -1,9 +1,0 @@
-AMES HOUSE PRICE
-SUMMARY:
-1. Per prima cosa i dati sono stati importati e sono stati imputati i missing. Questo è stato effettuato in vari metodi, per le variabili numeriche è stato imputato il valore medio, per i factor è stato imputato un nuovo livello che identificasse il valore mancnte. 
-2. Sono stati individuati ulteriori missing codificati con "". A questi sono stati assegnati dei valori sfruttando le tabelle di contingenza.
-3. La variabile Garage.Yr.Blt è stata discretizzata e raggruppata in classe, la variabile Yr.Sold è stata considerata factor mentre le altre variabili riguardanti gli anni sono state considerate numeriche.
-4. Sebbene non riportata è stata a lungo effettuata un'analisi esplorativa grafica dalla quale si è deciso per le variabili factor, di raggruppare i livelli di alcune variabili che appararivano nel dataset completo di train e test con una frequenza molto bassa, con altri livelli più numerosi, stando attenti a mantere lo stesso effetto sulla variabile risposta.
-5. Sono state create 3 nuove variabili: HouseOld, una combinazione tra Yr.Blt e Yr.Remod.Add, IsX2Flr , variabile dicotomica che identificala rpesenza del secondo piano, e una variabile Bsmt che identifica se il seminterrato è più grande o più piccolo del piano superiore.
-6. La risposta è stata trasformata in logaritmo.
-7. è stato allenato un modello SVM per regressione su tutte le variabili tranne Order, PID e Utilities
