@@ -1,4 +1,0 @@
-OK CUPID SUMMARY
-1.Sono stati importati i dati ed esplorati attraverso metodo grafico e utilizzando tabelle di contingenza.
-2.Dall'analisi esplorativa sono state selezionate 32 variabili. Le 2 variabili numeriche sono state discretizzate sempre attraverso l'ausilio di metodi grafici.
-3. é stato usato un modello Linear Discriminant Analysis per andare a prevedere la variabile risposta.
